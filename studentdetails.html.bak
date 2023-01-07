@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Details</title>
+	<link rel="stylesheet" href="css/studentdetails.css">
+	<link rel="stylesheet" href="css/NavBar.css">
+</head>
+<body style="background-image: url(img/students/grunge.png);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;">
+	<div class = "navbar">
+		<a href="main.html">
+			<img src="img/logo.png" class="navbar img" alt="Logo">
+		</a>
+		<a href="musicPge.html" class="Button" ><span>Music Page</span></a>
+		<a href="QueryForm.html" class="Button" ><span>Contact Us</span></a>
+		<a href="studentdetails.html" class="Button" ><span>About Us</span></a>
+		<a href="" class="Button" ><span>Site Map</span></a>
+		<a href="gallery.html" class="Button" ><span>Gallery</span></a>
+		<a href="quiz.html" class="Button" ><span>Quiz</span></a>
+		<a href="buy_products.html" class="Button" ><span>Buy Products</span></a>			
+		<a href="main.html" class="Button"><span>Home</span></a>
+	</div>
+	 	<h1 id="student_heading">Student Details</h1>
+		<div id="students_details"> <!--Group members details-->
+		
+			<!--Student 1-->
+			<div class="student_box">
+			   <div class="st_img"> <!--Layer Size -->
+					<img class="student_pic" src="img/students/devin.png" alt="devin">
+				  	<div class="student_layer"> <!--Invisible Layer-->
+						<p class="student_num">Student 1</p>
+						<p class="student_info">Devin Rajapakse</p>
+						<p class="student_info">20200109</p>
+						<p class="student_info">w1867332</p>
+						<p class="student_info"><a href="devin.html">CV</a></p>
+											
+						<!--When the user moves the mouse over the picture, the details of the member displayed-->
+						<!--The details include the name, Uow number, IIT number, and student number of the role-->
+				  	</div>
+			  	</div> 			  
+			</div>
+
+			 <!--Student 2-->
+			 <div class="student_box">
+			   <div class="st_img">
+				<img class="student_pic" src="img/students/osanda.png" alt="osanda">
+				  <div class="student_layer">
+					<p class="student_num">Student 2</p>
+					<p class="student_info">Osanda Herath</p>
+					<p class="student_info">20200184</p>
+					<p class="student_info">w1867300</p>
+					<p class="student_info"><a href="osanda.html">CV</a></p>
+				  </div>
+			  </div>
+			 </div>
+			
+			 <!--Student 3-->
+			 <div class="student_box">
+			   <div class="st_img">
+				 <img class="student_pic" src="img/students/Tharushi.png" alt="tharushi">
+				   <div class="student_layer">
+					 <p class="student_num">Student 3</p>
+					 <p class="student_info">Tharushi Subapanditha</p>
+					 <p class="student_info">20210323</p>
+					 <p class="student_info">w1867353</p>
+				   </div>
+			   </div>
+			 </div>
+
+			<!--Student 4-->
+			<div class="student_box">
+			  <div class="st_img">
+				 <img class="student_pic" src="img/students/sherah.png" alt="sherah">
+				   <div class="student_layer">
+					 <p class="student_num">Student 4</p>
+					 <p class="student_info">Sherah Premkumar</p>
+					 <p class="student_info">20200514</p>
+					 <p class="student_info">w1869858</p>
+			   </div>				 
+			</div>
+		   </div>
+	   </div>
+	<a href="file:///H:/Quiz/Tharushi.html">Page Developer</a>
+</body>
+</html>

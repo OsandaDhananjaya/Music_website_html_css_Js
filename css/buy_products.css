@@ -1,0 +1,45 @@
+body{
+    margin: 0%;
+}
+.image{
+    max-width: 300px;
+    max-height: 900px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: aliceblue;
+}
+h1{
+    color: beige;
+    text-align: center;
+}
+h2{
+    color: beige;
+}
+h3{
+    color: beige;
+}
+label{
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px 0px 0px 75px;
+} 
+.grid-item{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+strong{
+    text-align: left;
+    color: whitesmoke;
+    font-weight: bold ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+fieldset legend{
+    text-align: center;
+}

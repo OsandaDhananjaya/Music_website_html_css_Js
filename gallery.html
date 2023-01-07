@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Gallery">
+	<meta name="keywords" content="Gallery,thumbnails,Music instruments">
+	<meta name="author" content="IIT">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/NavBar.css">
+	<script src="js/gallery.js" async></script>
+</head>
+
+<body>
+	<!-- Navigation bar -->
+	<div class="navbar">
+		<a href="main.html">
+			<img src="img/logo.png" class="navbar img" alt="Logo">
+		</a>
+		<a href="musicPge.html" class="Button" ><span>Music Page</span></a>
+		<a href="QueryForm.html" class="Button"><span>Contact Us</span></a>
+		<a href="studentdetails.html" class="Button"><span>About Us</span></a>
+		<a href="sitemap.html" class="Button"><span>Site Map</span></a>
+		<a href="gallery.html" class="Button"><span>Gallery</span></a>
+		<a href="quiz.html" class="Button"><span>Quiz</span></a>
+		<a href="buy_products.html" class="Button"><span>Buy Products</span></a>
+		<a href="main.html" class="Button"><span>Home</span></a>
+	</div>
+
+	<!--Drop down menu -->
+	<div class="g_dropdown">
+		<div id="bg">
+			<label name="g_text" onclick="togglebg()"> Background Colour</label>
+			<ul id="background">
+				<li style="background: #1a53ff;" onclick="bgcolour(this)"></li>
+				<li style="background: #101012;" onclick="bgcolour(this)"></li>
+				<li style="background: #ffffff;" onclick="bgcolour(this)"></li>
+				<li style="background: #1aff1a;" onclick="bgcolour(this)"></li>
+			</ul>
+		</div>
+		<div id="font">
+			<label name="g_text" onclick="togglefont()">Text Colour</label>
+			<ul id="fontcolor">
+				<li style="background: #2c085e;" onclick="fontcolor(this)"></li>
+				<li style="background: #0f0f0f;" onclick="fontcolor(this)"></li>
+				<li style="background: #1a1aff;" onclick="fontcolor(this)"></li>
+				<li style="background: #006666;" onclick="fontcolor(this)"></li>
+				<li style="background: #ff1a1a;" onclick="fontcolor(this)"></li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<br>
+	<label name="g_text">
+		<h1 id="g_h1">Best Musical Instruments for Beginners</h1>
+	</label>
+	<br>
+	<br>
+	<!--Gallery-->
+
+	<style>
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		* {
+			outline: 0;
+
+		}
+
+		/* body {
+  margin-top:100px;
+  background:#111;
+  font-size:11px;
+  color:#aaa;
+  font-family:"Poppins", sans-serif;
+  color:
+} */
+
+		.container {
+			max-width: 1140px;
+			margin: 0 auto;
+			display: block;
+			margin-top: 85px;
+		}
+
+		.row {
+			display: flex;
+			align-items: center
+		}
+
+		.thumb-box {
+			display: flex;
+			max-width: 33.3333%;
+			margin: 0 15px;
+			position: relative;
+		}
+
+		.thumb-box a {
+			padding: 0;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			z-index: 9997;
+		}
+
+		.thumb-box img {
+
+			width: 100%;
+			height: 280px;
+			float: left;
+		}
+
+		.overlay-box {
+			position: absolute;
+			bottom: 0;
+			width: 90%;
+			z-index: 9998;
+			left: 0;
+			padding: 5%;
+			background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
+		}
+
+		.meta {
+			font-size: 14px;
+			display: block;
+
+		}
+
+		.main-title {
+			font-size: 16px;
+			display: block;
+			font-weight: 700;
+			text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+		}
+
+		.description {
+			color: #ccc;
+			font-size: 13px;
+			margin-top: 5px;
+			display: block;
+			color: #ccc;
+			max-height: 0;
+			line-height: 18px;
+			overflow: hidden;
+			opacity: 0;
+			transition: opacity 0.4s ease-out, max-height 0.4s ease-out, margin 0.4s;
+		}
+
+		.thumb-box a:hover .description {
+			opacity: 1;
+			max-height: 100px;
+			margin-top: 5px;
+			transition: opacity 0.4s ease-out, max-height 0.9s ease-out
+		}
+
+		.thumb-box a:hover .overlay-box {
+			background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+
+		}
+
+		#g_h1 {
+			left: 580px !important;
+		}
+	</style>
+
+	<div class="container">
+
+
+		<div class="row">
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\cello_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Cello</span>
+						<span class="main-title">The cello is a great first instrument</span>
+						<span class="description">Closely related to the violin, the cello is slightly bigger in size
+							and is played while sitting down.
+							It is mostly accompanied but can also be played solo. It is great for beginners and experts
+							recommend age 6 as a great starting point.</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\drum_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Drum</span>
+						<span class="main-title">The drums were beating, the fifes were playing.</span>
+						<span class="description">Although living with a beginner drummer might be difficult,
+							drums are number 4 on our list of popular instruments to play. There is a wide variety of
+							drums available and
+							you can also opt for an electric drum set that will allow for a quieter sound while
+							playing</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\fluit_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Flute</span>
+						<span class="main-title">A high-pitched woodwind instrument</span>
+						<span class="description">The flute has many advantages as a first instrument.
+							It is inexpensive, easy to learn, easy to transport, and fun to play!</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+
+		<div class="row">
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\guitar_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Guitar</span>
+						<span class="main-title">A stringed instrument usually having six strings</span>
+						<span class="description">The guitar comes in at a close second because of its own versatility,
+							cost, and the fact that it can be accompanied or played solo. While the piano has been
+							popular for generations, the rise of rock and pop music have attributed to the popularity of
+							the guitar.
+							You can play acoustic, electric, or bass guitar. And like the piano, experts advise age 6 as
+							the best starting age for learning
+							to play</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\harp_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Harp</span>
+						<span class="main-title">The chief musical instruments are rough types of trumpets</span>
+						<span class="description">Although for some the harp may be intimidating, it is pretty easy to
+							begin playing.
+							It also comes in different shapes and sizes, some small enough for even 8-year-olds to begin
+							playing.</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\piano_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Piano</span>
+						<span class="main-title">a keyboard musical instrument</span>
+						<span class="description">It might surprise you to know that 21 million Americans play the
+							piano!
+							The piano is possibly the most versatile of all instruments because it is played in almost
+							every genre and can be accompanied
+							or played solo. It will take patience and determination to play well, but once you master
+							it, you may have a good chance at
+							pursuing a career! If you choose to play piano, most experts will advise starting with a
+							more traditional piano over an
+							electric one. If your child is interested in piano, starting at age 6 is the best</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+
+		<div class="row">
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\saxone_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Saxophone</span>
+						<span class="main-title">Saxophone and bassoon are all woodwind instrument</span>
+						<span class="description">Saxophones, mostly associated with jazz music,
+							come in a variety of shapes and sizes and would be a great first instrument. The best age to
+							start playing is around 12.
+							Choosing the saxophone would give your child ample opportunities to play in school as they
+							are needed in school orchestras.</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\trumpbone_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Trumpet</span>
+						<span class="main-title">The trumpet is a brass instrument.</span>
+						<span class="description">The trumpet is also one of the oldest musical instruments.
+							It can be played in brass and jazz bands, in orchestras, and can be accompanied or played
+							solo. It is also inexpensive and easy to transport.
+							10 years of age is a great time to start learning!</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="thumb-box">
+				<a href="">
+					<img src="img\gallery\violin_new.png" alt="">
+					<span class="overlay-box">
+						<span class="meta">Violin</span>
+						<span class="main-title">The violin is a string instrument which has four strings and is played
+							with a bow.</span>
+						<span class="description">Violin is played a lot in classical music,
+							it is an important part of several genres. It is fairly easy to learn and you can purchase
+							different sizes,
+							which makes this a great instrument for kids to start out with. Six is the recommended
+							starting age and experts
+							also recommend a starting with a non-electric violin.</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<p>Page Done by <a href="Sherah.html">Sherah Premkumar</a></p>
+</body>
+
+</html>

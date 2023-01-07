@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Products</title>
+    <link rel="stylesheet" href="css/buy_products.css">
+    <link rel="stylesheet" href="css/NavBar.css">
+    <script>
+        function myFunction(frm){
+            // Validation of form
+            if(frm.FirstName.value=="")
+            alert("Please enter First name.")
+            if(frm.LastName.value=="")
+            alert("Please enter Last name.")
+            if(frm.Address.value=="")
+            alert("Please enter Address.")
+            if(frm.email.value=="")
+            alert("Please enter email.")
+            if(frm.Telephone.value=="")
+            alert("Please enter telephone number.")
+            if(frm.product.value=="")
+            alert("Please enter a product & quantity.")
+            else{
+                var pearlDrum=parseInt(document.getElementById("pearlDrum").value) || 0;
+                var pdpDrum=parseInt(document.getElementById("pdpDrum").value) || 0;
+                var yamahaDrum=parseInt(document.getElementById("yamahaDrum").value) || 0;
+                var yamahaElectricGuitar=parseInt(document.getElementById("yamahaElectricGuitar").value) || 0;
+                var yamahaSemiElectricGuitar=parseInt(document.getElementById("yamahaSemiElectricGuitar").value) || 0;
+                var yamahaGuitar=parseInt(document.getElementById("yamahaGuitar").value) || 0;
+            
+            // Calculating the total price of the items purchased
+            var pearlDrum = pearlDrum*100000;
+            var pdpDrum =pdpDrum*120000;
+            var yamahaDrum = yamahaDrum*80000;
+            var yamahaElectricGuitar = yamahaElectricGuitar*80000;
+            var yamahaSemiElectricGuitar = yamahaSemiElectricGuitar*60000;
+            var yamahaGuitar = yamahaGuitar*30000;
+            var total =(pearlDrum+pdpDrum+yamahaDrum+yamahaElectricGuitar+yamahaSemiElectricGuitar+yamahaGuitar);
+
+            // Displaying in the invoice
+            document.getElementById("order").innerHTML="First Name: "+document.getElementById("fname").value+
+            "\nLast Name: "+document.getElementById("lname").value+
+            "\nAddress: "+document.getElementById("address").value+
+            "\nEmail: "+document.getElementById("email").value+
+            "\nTelephone Number: "+document.getElementById("telephone").value+
+            "\nProduct & Quantity: "+document.getElementById("product").value+
+            "\nTotal Price: Rs "+total+".00"}
+        }
+    </script>
+</head>
+
+<body style="background-image:url(img/indexBackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;">
+    <div class = "navbar">
+        <a href="main.html">
+            <img src="img/logo.png" class="navbar img" alt="Logo">
+        </a>
+        <a href="musicPge.html" class="Button" ><span>Music Page</span></a>
+        <a href="QueryForm.html" class="Button" ><span>Contact Us</span></a>
+        <a href="studentdetails.html" class="Button" ><span>About Us</span></a>
+        <a href="sitemap.html" class="Button" ><span>Site Map</span></a>
+        <a href="gallery.html" class="Button" ><span>Gallery</span></a>
+        <a href="quiz.html" class="Button" ><span>Quiz</span></a>
+        <a href="buy_products.html" class="Button" ><span>Buy Products</span></a>			
+        <a href="main.html" class="Button"><span>Home</span></a>
+    </div>
+    <h1>Buy Products</h1>  
+    <h1>Drum Sets</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="image">
+                <h2>Pearl Drum Set</h2>  
+                <img src="img/product/drum.png" alt="Pearl Drum Set" height="250" width="300"> 
+                <p>5 peice drum kit with one cymbal. The price of the Pearl Drum Set is Rs 100,000</p>
+                <label for = "pearlDrum">Quantity</label>>
+                <input type="number" id="pearlDrum" name="pearlDrum" min="0">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <h2>PDP Drum Set</h2>  
+                <img src="img/product/pdp.png" alt="PDP Drum Set" height="250" width="300"> 
+                <p>5 peice drum set with 2 cymbals. The price of the PDP Drum Set is Rs 120,000</p>
+                <label for = "pdpDrum" >Quantity</label>
+                <input type="number" id="pdpDrum" name="pdpDrum" min="0">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <h2>Yamaha Drum </h2>  
+                <img src="img/product/yamaha.png" alt="Yamaha Drum Set" height="250" width="300"> 
+                <p>4 peice drum set with 1 cymbal. The price of the Yamaha Drum Set is Rs 80,000</p>
+                <label for = "yamahaDrum" >Quantity</label>
+                <input type="number" id="yamahaDrum" name="yamahaDrum" min="0">
+            </div>
+        </div>
+    </div>
+    <h1>Guitars</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="image">
+                <h2>Yamaha Electric Guitar</h2>  
+                <img src="img/product/yamahaElectricGuitar.png" alt="Yamaha Electric Guitar" height="250" width="300"> 
+                <p>The price of the Yamaha electric guitar is Rs 80,000</p>
+                <label for = "yamahaElectricGuitar" >Quantity</label>
+                <input type="number" id="yamahaElectricGuitar" name="yamahaElectricGuitar" min="0">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <h2>Yamaha Semi Electric Guitar</h2>  
+                <img src="img/product/semiElectric.png" alt="Yamaha Semi Electric Guitar" height="250" width="300"> 
+                <p>The price of the Yamaha Semi electric guitar is Rs 60,000</p>
+                <label for = "yamahaSemiElectricGuitar" >Quantity</label>
+                <input type="number" id="yamahaSemiElectricGuitar" name="yamahaSemiElectricGuitar" min="0">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <h2>Acoustic Guitar</h2>  
+                <img src="img/product/guitar.png" alt="Yamaha Acoustic Guitar" height="250" width="300"> 
+                <p>The price of the Yamaha acoustic guitar is Rs 30,000</p>
+                <label for = "yamahaGuitar" >Quantity</label>
+                <input type="number" id="yamahaGuitar" name="yamahaGuitar" min="0">
+            </div>
+        </div>
+    </div>
+    <form>
+        <fieldset>
+            <legend><h2>Personal Details</h2></legend>
+            <div>
+                <label for="fname">First Name</label><br>
+                <input type="text" name="FirstName" id="fname" placeholder="Enter First Name">
+            </div>
+            <div>
+                <label for="lname">Last Name</label><br>
+                <input type="text" name="LastName" id="lname" placeholder="Enter Last Name">
+            </div>
+            <div>
+                <label for="address">Address</label><br>
+                <input type="text" name="Address" id="address" placeholder="Enter Customer Address">
+            </div>
+            <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Email Address">
+            </div>
+            <div>
+                <label for="telephone">Telephone Number</label><br>
+                <input type="tel" name="Telephone" id="telephone" placeholder="Enter Telephone Number">
+            </div>
+            <div>
+                <label for="product">Product & Quantity</label><br>
+                <textarea id="product" name="product" rows="12" cols="50" placeholder="Enter the products purchased with the quntity"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><h2>Order Details</h2></legend>
+            <input type="button" value="Place Order" onclick="myFunction(this.form)">
+            <input type="reset" value="Reset Form">
+            <label for="order">Order Information</label>
+            <textarea id="order" name="order" rows="10" cols="50"></textarea><br>
+            <strong>Please Note that you can change the order simply by adding or removing the products from above.<br>Click Confirm Order to proceed.</strong><br>
+            <input type="submit" value="Confirm Order">
+        </fieldset>
+    </form>
+    <p>Page Done by <a href="devin.html">Devin Rajapakse</a></p>
+</body>
+</html>

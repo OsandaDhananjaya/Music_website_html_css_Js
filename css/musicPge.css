@@ -1,0 +1,32 @@
+body{
+    margin: 0%;
+}
+h1{
+    text-align: center;
+    color: azure;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px 0px 0px 75px;
+} 
+.grid-item{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.image{
+    max-width: 300px;
+    max-height: 900px;
+}
+h2{
+    color: beige;
+    text-align: left;
+    padding: 10px;
+    font-size: 200%;
+}
+h3{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}

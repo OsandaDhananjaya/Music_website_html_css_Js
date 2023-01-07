@@ -1,0 +1,20 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: cadetblue;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    text-align: center;
+    font-size: 30px;
+}
+
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    text-align: center;
+    font-size: 30px;  
+}
